@@ -45,10 +45,9 @@ A release isn't just about the awesome features you get. It's also about fixing 
 
 ## The `classic` Autoloader is Deprecated
 
-The `classic` autoloader has served as well since the first Rails release, but there's a new kid in the block and it is going to start its deprecation cycle.
+The `classic` autoloader has served us well since the first Rails release, but there's a new kid on the block and it is going to start its deprecation cycle.
 
 New Rails projects are strongly discouraged from using `classic`, and we recommend that existing projects running on `classic` switch to `zeitwerk` mode when upgrading. Please check the [_Upgrading Ruby on Rails_](https://guides.rubyonrails.org/upgrading_ruby_on_rails.html) guide for tips.
-
 
 ## And more!
 
