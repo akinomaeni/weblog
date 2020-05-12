@@ -43,6 +43,13 @@ Additionally, Rails 6.1 adds support to Active Storage for [permanent URLs for b
 
 A release isn't just about the awesome features you get. It's also about fixing bugs, improving performance, and making Rails more stable for everyone. This release includes an improvement that [avoids making a query if `where` passes an empty array](https://github.com/rails/rails/pull/37266) reported by [Molly Struve](https://github.com/mstruve) and the fix implemented by [John Hawthorn](https://github.com/jhawthorn). [Eileen M. Uchitelle](https://github.com/eileencodes) and [Aaron Patterson](https://github.com/tenderlove) also implemented a [performance improvement](https://github.com/rails/rails/pull/39009) that speeds up `where` queries when we know all the values are an integer.
 
+## The `classic` Autoloader is Deprecated
+
+The `classic` autoloader has served as well since the first Rails release, but there's a new kid in the block and it is going to start its deprecation cycle.
+
+New Rails projects are strongly discouraged from using `classic`, and we recommend that existing projects running on `classic` switch to `zeitwerk` mode when upgrading. Please check the [_Upgrading Ruby on Rails_](https://guides.rubyonrails.org/upgrading_ruby_on_rails.html) guide for tips.
+
+
 ## And more!
 
 There are so many great changes in Rails 6.1. [531](https://contributors.rubyonrails.org/edge/contributors) people made contributions to Rails. Check out the [CHANGELOGS](https://github.com/rails/rails/tree/v6.1.0.beta1) for more details on bug fixes, performance improvements, and other features.
